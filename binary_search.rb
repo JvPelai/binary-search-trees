@@ -131,30 +131,4 @@ class Tree
     end       
 end 
 
-tree = Tree.new(Array.new(15){rand(1..100)})
-p tree.balanced?
-p tree.level_order
-p tree.preorder
-p tree.inorder
-p tree.postorder 
-5.times { tree.insert(rand(101..200)) }
-p 'Level order'
-p tree.level_order
-puts "\n"
-p 'Check if tree is balanced'
-p tree.balanced?
-p 'Rebalance tree'
-tree.rebalance
-p 'Check if tree is balanced'
-p tree.balanced?
-p 'Level order'
-p tree.level_order
-puts "\n"
-p 'Pre-order'
-p tree.preorder
-puts "\n"
-p 'Inorder'
-p tree.inorder
-puts "\n"
-p 'Post-order'
-p tree.postorder
+
